@@ -9,7 +9,7 @@ app.set("port", process.env.PORT || 5000);
 
 // Connect mongo
 const mongoose = require('mongoose');
-mongoose.connect("mongodb://localhost:27017/Todos", {
+mongoose.connect(process.env.MONGODB_URI, {
   useUnifiedTopology: true,
   useNewUrlParser: true,
 });
