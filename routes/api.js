@@ -40,7 +40,7 @@ router.post('/todos', async (req, res) => {
       todo: null
       })
     }
-    return res.status(200).json({
+    return res.status(201).json({
       success: true,
       message: 'Successfully created Todo',
       todo: todos
